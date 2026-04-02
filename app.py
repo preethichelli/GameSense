@@ -151,7 +151,7 @@ with tab2:
                 # Step 2: Fill values
                 input_df.loc[0] = 0  # initialize row
 
-                input_df.at[0, "Price_USD"] = game["Price_USD"]
+                
                 input_df.at[0, "Review_Score_Pct"] = game["Review_Score_Pct"]
                 input_df.at[0, "Total_Reviews"] = game["Total_Reviews"]
                 input_df.at[0, "24h_Peak_Players"] = game["24h_Peak_Players"]
