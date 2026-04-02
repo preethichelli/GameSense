@@ -141,6 +141,12 @@ with tab2:
             def predict_game_success(game):
                 # Step 1: Create full empty input with correct columns
                 input_df = pd.DataFrame(columns=feature_columns)
+                def safe_float(value):
+                    try:
+                        return float(value)
+                    except:
+                         return 0.0
+
 
                 # Step 2: Fill values
                 input_df.loc[0] = 0  # initialize row
