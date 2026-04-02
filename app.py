@@ -93,7 +93,7 @@ if deck_option != "All":
     filtered_df = filtered_df[filtered_df["Steam_Deck_Status"] == deck_option]
 
 # ---------------- TITLE ----------------
-st.title("SteamScope 🎮")
+st.title("GameSense :D")
 st.caption("Discover, analyze, and find your next game")
 
 # ---------------- METRICS ----------------
