@@ -29,7 +29,7 @@ section[data-testid="stSidebar"] {
 """, unsafe_allow_html=True)
 
 # ---------------- LOAD DATA ----------------
-df = pd.read_csv("data/steam_games_2026.csv")
+df = pd.read_csv("steam_games_2026.csv")
 
 # ---------------- PREPROCESS ----------------
 df["Release_Date"] = pd.to_datetime(df["Release_Date"], errors="coerce")
@@ -41,8 +41,8 @@ df["combined_features"] = (
 )
 
 # ---------------- LOAD ML MODEL ----------------
-model = joblib.load("models/rf_model.pkl")
-feature_columns = joblib.load("models/feature_columns.pkl")
+model = joblib.load("rf_model.pkl")
+feature_columns = joblib.load("feature_columns.pkl")
 
 # ---------------- TF-IDF SEARCH ----------------
 vectorizer = TfidfVectorizer(stop_words='english')
