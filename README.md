@@ -22,4 +22,4 @@ GameSense is a simple machine learning web app that analyzes Steam game data and
 ## Run the App
 ```bash
 pip install -r requirements.txt
-streamlit run gamesense.py
+streamlit run app.py
